@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mi Perfil</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+        body {
+            font-family: 'Quicksand', sans-serif;
+            margin: 0;
+        }
+
+        a:visited {
+            color: rgb(129, 133, 132);
+        }
+
+        .header {
+            background-color: rgb(241, 241, 241);
+            position: relative;
+            padding-bottom: 20px;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            
+        }
+
+        .menu {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(173, 188, 200);
+            transform: translateY(100%);
+            animation: slide-down 0.5s forwards;
+        }
+
+        .menu li {
+            margin: 0 10px;
+        }
+
+        .menu li:last-child {
+            margin-right: 0;
+        }
+
+        .menu li a {
+            display: block;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #333;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .menu li a:hover {
+            background-color: #ccc;
+        }
+
+        @keyframes slide-down {
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .foto-perfil {
+            width: 200px;
+            height: 200px;
+            display: block;
+            flex-shrink: 0;
+            margin-right: 20px;
+        }
+
+        .minombre {
+            color: #898484;
+            font-family: 'Quicksand', sans-serif;
+            font-size:small;
+        }
+
+        #perfil {
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        footer {
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            background-color: rgb(219, 219, 222);
+            margin: 0;
+            height: 50px;
+            margin: 0;
+        }
+
+        footer a {
+            color: inherit;
+        }
+
+        .container {
+            background-color: aliceblue;
+            padding: 20px;
+        }
+
+        .info-adicional {
+            border: 1px solid #8f8c8c;
+            padding: 10px;
+            color:#232121;
+        }
+
+        .frase{
+            color:#3e3d3d;
+            text-align: center;
+            position: relative;
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        .video-fondo {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+        }
+    </style>
+    </head>
+    <body>
+        <header class="header">
+            <h1 class="minombre">Tamara Guillem Yagoubi</h1>
+            <img src="Images/fotoPerfil-sinfondo.png" alt="Foto de perfil"
+                class="foto-perfil">
+            <div class="frase">
+                <h3><i>"Construyendo puentes entre ideas y realidad con cada línea de código."</i></h3>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="Index.html">Inicio</a></li><br>
+                    <li><a href="MiPerfil.html">Mi Perfil</a></li><br>
+                    <li><a href="DatosPersonales.html">Datos Personales</a></li><br>
+                    <li><a href="DatosAcademicos.html">Datos Académicos</a></li><br>
+                    <li><a href="ExperienciaProfesional.html">Experiencia
+                            Profesional</a></li><br>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="perfil">
+            <div class="info-adicional">
+                <h2>Información Adicional</h2><br>
+
+                <ul>
+                    <li>Nombre completo: Tamara Guillem Yagoubi</li><br>
+                    <li>Ciudad de Residencia: Valencia</li><br>
+                    <li>Correo electrónico: tamara27gc@gmail.com</li><br>
+                    <li>Tlf.: 689358434</li><br>
+                    <li>GitHub: <a href="https://github.com/TamaraGuillem"
+                            target="_blank">https://github.com/TamaraGuillem</a></li><br>
+                    <li>Objetivos Profesionales: Estoy emocionada por sumergirme
+                        en el fascinante mundo de la programación. Mi objetivo
+                        es desarrollar mis habilidades técnicas y adquirir
+                        conocimientos sólidos en programación y tecnologías
+                        relacionadas. Estoy comprometida en aprender de forma
+                        continua y enfrentar nuevos desafíos en este campo en
+                        constante evolución. Mi meta es convertirme en una
+                        profesional competente y contribuir en proyectos que
+                        impulsen la innovación y el progreso tecnológico.</li><br>
+                </ul>
+            </div>
+        </section>
+
+        <footer>
+            <p>Contacto: <a href="mailto:tamara27gc@gmail.com" target="_blank">tamara27gc@gmail.com</a>
+                | Teléfono: 689358434</p>
+        </footer>
+
+    </body>
+
+</html>

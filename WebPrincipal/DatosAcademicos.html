@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos Académicos</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+        body {
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        a:visited {
+            color: rgb(59, 61, 61);
+        }
+
+        .header {
+            color: #333;
+            font-family: 'Quicksand', sans-serif;
+            background-color: rgb(241, 241, 241);
+            position: relative;
+            padding-bottom: 20px;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(173, 188, 200);
+            transform: translateY(100%);
+            animation: slide-down 0.5s forwards;
+        }
+
+        .menu li {
+            margin: 0 10px;
+        }
+
+        .menu li:last-child {
+            margin-right: 0;
+        }
+
+        .menu li a {
+            display: block;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #333;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .menu li a:hover {
+            background-color: #ccc;
+        }
+
+        @keyframes slide-down {
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        footer {
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            background-color: rgb(219, 219, 222);
+            margin: 0;
+            height: 50px;
+            margin: 0;
+        }
+
+        footer a {
+            color: inherit;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            background-color: aliceblue;
+            padding: 20px;
+        }
+
+        .studies {
+            width: 45%;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        .additional-studies {
+            width: 45%;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <h1>Datos Académicos</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="Index.html">Inicio</a></li><br>
+                <li><a href="MiPerfil.html">Mi Perfil</a></li><br>
+                <li><a href="DatosPersonales.html">Datos Personales</a></li><br>
+                <li><a href="DatosAcademicos.html">Datos Académicos</a></li><br>
+                <li><a href="ExperienciaProfesional.html">Experiencia Profesional</a></li><br>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="studies">
+            <h2>Estudios</h2>
+            <ul>
+                <li>
+                    <h3>Gestión de Alojamientos I Altaviana</h3>
+                    <p>Septiembre 2020 - Junio 2022</p>
+                </li>
+                <li>
+                    <h3>Auxiliar de vuelo I Formacrew S.L</h3>
+                    <p>Septiembre 2017 - Enero 2018</p>
+                </li>
+                <li>
+                    <h3>Bachillerato I I.E.S La Creueta</h3>
+                    <p>Septiembre 2015 - Mayo 2017</p>
+                </li>
+                <li>
+                    <h3>Protocolo y Actuación en Eventos I EIP</h3>
+                    <p>Febrero 2022</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="additional-studies">
+            <h2>Estudios adicionales</h2>
+            <ul>
+                
+                <li>
+                    <h3>Inglés I New College Group Ireland</h3>
+                    <p>Enero 2018 - Marzo 2018</p>
+                </li>
+                <li>
+                    <h3>Italiano I Central Park Alicante</h3>
+                    <p>Agosto 2017 - Marzo 2018, Diciembre 2018</p>
+                </li>
+                <li>
+                    <h3>Competencias Sociales y Gestión Emocional</h3>
+                    <p>2020-2021</p>
+                </li>
+                <li>
+                    <h3>Curso de Internet Avanzado</h3>
+                    <p>Febrero 2023</p>
+                </li>
+                <li>
+                    <h3>Curso de introducción a la programación Lenguaje.NET</h3>
+                    <p>Marzo-Abril 2023</p>
+                </li>
+                <li>
+                    <h3>Curso de Python Básico</h3>
+                    <p>Abril-Mayo 2023</p>
+                </li>
+                <li>
+                    <h3>Curso de Desarrollo de Aplicaciones Móviles</h3>
+                    <p>Mayo-Junio 2023</p>
+                </li>
+                <li>
+                    <h3>Curso de introducción a UX/UI I Google</h3>
+                    <p>Abril 2023</p>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>Contacto: <a href="mailto:tamara27gc@gmail.com" target="_blank">tamara27gc@gmail.com</a> | Teléfono: 689358434</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+        body {
+            font-family: 'Quicksand', sans-serif;
+            margin: 0;
+        }
+
+        .banner {
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .banner h1 {
+            font-family: 'Quicksand', sans-serif;
+            font-size: 36px;
+            font-weight: bold;
+            color: #e9e5e5;
+            animation: fade-in 2s ease-out;
+        }
+
+        @keyframes fade-in {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .header {
+            position: relative;
+            width: 100%;
+            height: 40px;
+            padding-bottom: 20px;
+        }
+
+        .header-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            animation: slow-play 20s linear infinite;
+        }
+
+        .header-video video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .menu {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(155, 167, 177);
+            transform: translateY(100%); 
+            animation: slide-down 0.5s forwards; 
+        }
+
+        .menu li {
+            margin: 0 10px;
+        }
+
+        .menu li a {
+            display: block;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .menu li a:hover {
+            background-color: #ccc;
+        }
+
+        @keyframes slide-down {
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .banner-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('Images/banner1.png');
+            background-size: cover;
+            background-position: center;
+            z-index: -1;
+        }
+
+        footer {
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            background-color: rgb(219, 219, 222);
+            margin: 0;
+            height: 50px;
+        }
+
+        footer a {
+            color: inherit;
+        }
+
+        .container{
+            background-color:aliceblue;
+            padding: 20px;
+        }
+
+        body{
+            margin: 0;
+            overflow: hidden;
+        }
+
+        #background-video{
+            position: fixed;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+        }
+
+        .container{
+            text-align: center;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .form-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #5b575f;
+            border-radius: 4px;
+        }
+
+        .form{
+            color:#ccc;
+            width: 300px;
+            padding: 20px;
+            background-color:rgb(61, 70, 74);
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(129, 125, 125, 0.1);
+        }
+
+        .FormularioDeContacto{
+            text-align: center;
+            margin-bottom: 20px;
+            color:rgb(235, 235, 229)
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .form input[type="text"],
+        .form input[type="email"],
+        .form textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .form input[type="submit"] {
+            background-color: #4c5362;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }   
+    </style>
+</head>
+
+<body>
+    </div>
+    <div class="banner">
+        <div class="banner-image"></div>
+        <h1>¡BIENVENIDOS A MI PÁGINA!</h1>
+    </div>
+
+    <header class="header">
+        <nav>
+            <ul class="menu">
+                <li><a href="Index.html">Inicio</a></li>
+                <li><a href="MiPerfil.html">Mi Perfil</a></li>
+                <li><a href="DatosPersonales.html">Datos Personales</a></li>
+                <li><a href="DatosAcademicos.html">Datos Académicos</a></li>
+                <li><a href="ExperienciaProfesional.html">Experiencia Profesional</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="containter">
+        
+        <div class="form-container">
+            <h2 class="FormularioDeContacto">Formulario de Contacto</h2>
+            <form class="form" onsubmit="guardarDatos(event)">
+                <label for="nombre">Nombre: </label>
+                <input type="text" id="nombre" name="nombre" required><br>
+
+                <label for="email">Correo electrónico: </label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="asunto">Asunto:</label>
+                <input type="text" id="asunto" name="asunto" required><br>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br>
+
+                <form class="form" onsubmit="guardarDatos(event)">
+                    <input type="submit"value=Enviar>
+                </form>
+                
+            </form>
+        </div>
+    </div>
+
+    <script>
+        window.onload = function() {
+            var datosFormulario = localStorage.getItem('datosFormulario');
+            if (datosFormulario) {
+                var datos = JSON.parse(datosFormulario);
+                document.getElementById('nombre').value = datos.nombre || '';
+                document.getElementById('email').value = datos.email || '';
+                document.getElementById('asunto').value = datos.asunto || '';
+                document.getElementById('mensaje').value = datos.mensaje || '';
+            }
+        }
+
+
+        function guardarDatos(event) {
+            event.preventDefault();
+
+            var nombre = document.getElementById('nombre').value;
+            var email = document.getElementById('email').value;
+            var asunto = document.getElementById('asunto').value;
+            var mensaje = document.getElementById('mensaje').value;
+
+            var datos = {
+                nombre: nombre,
+                email: email,
+                asunto: asunto,
+                mensaje: mensaje
+            };
+
+            localStorage.setItem('datosFormulario', JSON.stringify(datos));
+
+            alert("Mensaje enviado");
+
+            window.location.href = 'guardar_datos.html';
+        }
+    </script>
+
+    <footer>
+        <p>Contacto: <a href="mailto:tamara27gc@gmail.com" target="_blank">tamara27gc@gmail.com</a> | Teléfono: 689358434</p>
+    </footer>
+    <video id="background-video" autoplay muted loop>
+        <source src="Videos/VideoFondo.mp4" type="video/mp4">
+    </video>
+</body>
+</html>

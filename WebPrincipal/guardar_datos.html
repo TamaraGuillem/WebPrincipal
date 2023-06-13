@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos Guardados</title>
+</head>
+<body>
+    <h1>Datos Guardados</h1>
+
+    <div id="datos-container"></div>
+
+    <script>
+        window.onload = function() {
+            var datosFormulario = localStorage.getItem('datosFormulario');
+            if (datosFormulario) {
+                var datos = JSON.parse(datosFormulario);
+
+                var datosContainer = document.getElementById('datos-container');
+
+                var nombreElement = document.createElement('p');
+                nombreElement.textContent = 'Nombre: ' + datos.nombre;
+                datosContainer.appendChild(nombreElement);
+
+                var emailElement = document.createElement('p');
+                emailElement.textContent = 'Correo electrónico: ' + datos.email;
+                datosContainer.appendChild(emailElement);
+
+                var asuntoElement = document.createElement('p');
+                asuntoElement.textContent = 'Asunto: ' + datos.asunto;
+                datosContainer.appendChild(asuntoElement);
+
+                var mensajeElement = document.createElement('p');
+                mensajeElement.textContent = 'Mensaje: ' + datos.mensaje;
+                datosContainer.appendChild(mensajeElement);
+            }
+        }
+    </script>
+</body>
+</html>

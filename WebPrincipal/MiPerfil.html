@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Perfil</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
+
+        body {
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .header {
+            color: #333;
+            font-family: 'Quicksand', sans-serif;
+            background-color: rgb(241, 241, 241);
+            position: relative;
+            padding-bottom: 20px;
+        }
+
+        .menu {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(173, 188, 200);
+            transform: translateY(100%);
+            animation: slide-down 0.5s forwards;
+        }
+
+        .menu li {
+            margin: 0 10px;
+        }
+
+        .menu li:last-child {
+            margin-right: 0;
+        }
+
+        .menu li a {
+            display: block;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .menu li a:hover {
+            background-color: #ccc;
+        }
+
+        @keyframes slide-down {
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .DatosPersonales {
+            color: #333;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        footer {
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            background-color: rgb(219, 219, 222);
+            margin: 0;
+            height: 50px;
+            margin: 0;
+        }
+
+        footer a {
+            color: inherit;
+        }
+        .container{
+            background-color:aliceblue;
+            padding: 20px;
+        }
+        
+        #introduccion, #competencias, #idiomas {
+            border: 1px solid #6d6e72;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1 class="DatosPersonales">Datos Personales</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="Index.html">Inicio</a></li>
+                <li><a href="MiPerfil.html">Mi Perfil</a></li>
+                <li><a href="DatosPersonales.html">Datos Personales</a></li>
+                <li><a href="DatosAcademicos.html">Datos Académicos</a></li>
+                <li><a href="ExperienciaProfesional.html">Experiencia
+                        Profesional</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="introduccion">
+        <h2>¡Bienvenido/a a mi página de curriculum!</h2>
+        <p>Me considero una persona diligente, metódica y disciplinada.
+            Valoro en gran medida la profesionalidad y la puntualidad en el
+            entorno de trabajo. Además, el sentido del humor y la educación
+            son aspectos que considero fundamentales en mi vida personal.</p>
+        <p>Aunque mi experiencia previa se ha centrado en trabajos de cara
+            al público, como encargada de un establecimiento, y en funciones
+            de gestión y supervisión en un hotel de alto standing,
+            actualmente estoy enfocada en aprender a programar desde cero.
+            Estoy emocionada por adquirir nuevos conocimientos en el campo
+            de la programación y desarrollar habilidades técnicas.</p>
+        <p>He descubierto que la iniciativa y la motivación son clave para
+            lograr un trabajo de calidad y volumen satisfactorios en el
+            entorno laboral. Afortunadamente, cuento con flexibilidad
+            horaria y una gran movilidad, lo cual me permite dedicar tiempo
+            y esfuerzo a mi aprendizaje en programación. Estoy comprometida
+            en crecer en este campo y enfrentar los desafíos que surjan en
+            mi camino hacia el dominio de la programación.</p>
+    </div>
+
+    <section id="competencias">
+        <h4>Competencias</h4>
+        <ul>
+            <li>Manejo de Excel</li>
+            <li>Resolutiva</li>
+            <li>Meticulosa</li>
+            <li>Proactiva</li>
+            <li>Observadora</li>
+            <li>Carnet de Conducir</li>
+        </ul>
+    </section>
+
+    <aside>
+        <div id="idiomas">
+            <h4>Idiomas</h4>
+            <ul>
+                <li>Inglés: Nivel intermedio</li>
+                <li>Valenciano: Nivel intermedio</li>
+                <li>Francés: Nivel básico</li>
+                <li>Italiano: Nivel básico</li>
+            </ul>
+        </div>
+    </aside>
+
+    <footer>
+        <p>Contacto: <a href="mailto:tamara27gc@gmail.com" target="_blank">tamara27gc@gmail.com</a>
+            | Teléfono: 689358434</p>
+    </footer>
+
+    
+</body>
+</html>
